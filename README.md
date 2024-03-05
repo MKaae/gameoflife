@@ -1,1 +1,1 @@
-No deployment yet.
+https://mkaae.github.io/gameoflife/
