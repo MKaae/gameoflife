@@ -37,7 +37,7 @@ h1 {
     grid-template-columns: repeat(var(--row), 4px);
 }
 .alive {
-    background-color: rgb(120, 253, 37);;
+    background-color: rgb(120, 253, 37);
 }
 .dead {
     background-color: rgb(110, 117, 129);
