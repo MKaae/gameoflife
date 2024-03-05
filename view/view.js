@@ -32,7 +32,7 @@ function makeButtonsClickable(row, col){
 }
 
 export function createView(row, col){
-    document.documentElement.style.setProperty('--col', col);
+    document.documentElement.style.setProperty('--row', row);
     const board = document.getElementById('board');
     for(let i = 0; i < row; i++){
         const rowElement = document.createElement('div');

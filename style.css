@@ -1,4 +1,4 @@
---col
+--row
 
 body {
     display:flex;
@@ -21,6 +21,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 h1 {
     color: rgb(120, 253, 37);
@@ -35,7 +36,7 @@ h1 {
 #board {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(var(--col), 4px);
+    grid-template-columns: repeat(var(--row), 4px);
 }
 .alive {
     background-color: rgb(120, 253, 37);;
