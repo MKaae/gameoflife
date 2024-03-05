@@ -31,7 +31,7 @@ export function addCells(row,col){
 export function runMutation(row, col){
     const tempModel = createBoard(row, col);
     for(let i = 0; i < model.length; i++){
-        for(let j = 0; j < model[i].length; j++){
+        for(let j = 0; j < model[0].length; j++){
             const neighbors = countNeighbors(i,j);
             if(model[i][j] == 1){
                 if(neighbors < 2 || neighbors > 3){
@@ -57,7 +57,7 @@ function countNeighbors(row, col){
             if(i === 0 && j === 0) continue;
             const neighborRow = row + i;
             const neighborCol = col + j;
-            if(neighborRow >= 0 && neighborRow < model.length && neighborCol >= 0 && neighborCol < model.length){
+            if(neighborRow >= 0 && neighborRow < model.length && neighborCol >= 0 && neighborCol < model[0].length){
                 if(model[neighborRow][neighborCol]){
                     count++;
                 }
