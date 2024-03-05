@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <link rel="stylesheet" href="style.css">
     <title>Conway's game of life!</title>
 </head>
 <body>
-    <h1>Game of life</h1>
-    <button id="start-btn">Start!</button>
-    <div id="board"></div>
-    <script src="script.js" type="module"></script>
+    <main id="game">
+        <h1>Conway's game of life</h1>
+        <div id="selecter-div">
+            <input type="number" id="row-select" placeholder="Width">
+            <input type="number" id="col-select" placeholder="Height">
+            <button id="grid-select">Select size</button>
+        </div>
+        <div id="button-row">
+            <button id="add-btn">Add cells</button>
+            <button id="start-btn" >Start</button>
+            <button id="stop-btn">Stop</button>
+            <button id="clear-btn">Clear cells</button>
+        </div>
+        <div id="board"></div>
+    </main>
+    <script src="./view/view.js" type="module"></script>
 </body>
 </html>
