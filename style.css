@@ -21,7 +21,6 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 h1 {
     color: rgb(120, 253, 37);
